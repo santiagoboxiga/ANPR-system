@@ -1,0 +1,6 @@
+opencv
+numpy
+ultralytics
+openpyxl
+pandas
+fast_plate_ocr
