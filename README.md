@@ -6,15 +6,15 @@ This project implements a complete Automatic Number Plate Recognition (ANPR) pip
 
 ```
 ├── videos/                     # Input videos to be analyzed
-├── snaps/                      # Output folder for cropped license plate images
 ├── models/                     # YOLO detection models (vehicle + license plate)
+├── sort/                       # Kalman filter
+├── utils/
+│   ├── plate_utils.py          # Utilities for OCR processing and Excel generation
+│   └── snapshot_utils.py       # Utilities for snapshot cropping and selection
 ├── snap_log.csv                # Log of snapshots with metadata
 ├── plate_recognition_results.xlsx # Final summary of license plates
 ├── plate_snapshot.py           # Main script to extract license plate snapshots from video
 ├── plate_reader.py             # Script to run OCR on snapshots and generate Excel output
-├── utils/
-│   ├── plate_utils.py          # Utilities for OCR processing and Excel generation
-│   └── snapshot_utils.py       # Utilities for snapshot cropping and selection
 ```
 
 ## 🚀 Features
